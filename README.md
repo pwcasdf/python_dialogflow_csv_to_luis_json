@@ -1,5 +1,7 @@
 # LUIS csv to json (for version import from gcp dialogflow)
 
+>_important **use csv file as csv utf-8**_
+
 ## how to use?
 
 <ol>
