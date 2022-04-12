@@ -1,8 +1,8 @@
 import csv
 import json
 
-intentCSV = 'intent_capital.csv'
-entityCSV = 'entity_capital.csv'
+intentCSV = 'capital_intent_0411.csv'
+entityCSV = 'capital_entity_0411.csv'
 
 dict = {
     "luis_schema_version": "7.0.0",
