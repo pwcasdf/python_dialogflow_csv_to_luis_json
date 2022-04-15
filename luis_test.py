@@ -4,13 +4,13 @@ import requests
 
 testCSV = 'capital_test.csv'
 
-columnName = 'column_name'
+columnName = 'question'
 
-endpointURL = 'endpoint_URL'
-appID = 'app_ID'
-apiType = 'slots' # slots or versions    @pwcasdf
-apiTpye2 = 'production' # slot name or version name    @pwcasdf
-key = 'prediction_key'
+endpointURL = 'endpoint'
+appID = 'app_id'
+apiType = 'slots or versions' # slots or versions    @pwcasdf
+apiTpye2 = 'production or version no' # slot name or version name    @pwcasdf
+key = 'luis_key'
 
 def luis_predict(csvPath, endpointURL, appID, apiType, apiTpye2):
     predict_url = endpointURL + "luis/" + "prediction/" + "v3.0/" \
@@ -18,7 +18,7 @@ def luis_predict(csvPath, endpointURL, appID, apiType, apiTpye2):
 
     dict_key = {}
     dict_key['Ocp-Apim-Subscription-Key'] = key
-    
+
     i = 0
 
     with open(csvPath, 'r', encoding = "utf-8-sig") as csvFile:
