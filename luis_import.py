@@ -14,7 +14,7 @@ dict = {
     "prebuiltEntities": [],
     "utterances": [],
     "versionId": "0.0.1",
-    "name": "test",
+    "name": "capital_luis",
     "desc": "",
     "culture": "ko-kr",
     "tokenizerVersion": "1.0.0",
@@ -53,11 +53,6 @@ def to_luis_intent(csvPath):
                     dict_temp['name'] = row['intent']
                     dict_temp['features'] = []
                     dict['intents'].append(dict_temp)
-
-                
-
-
-
 
 # coginsight example to luis utterance    @pwcasdf
 def to_luis_utterance(csvPath):
@@ -126,6 +121,6 @@ to_luis_intent(intentCSV)
 to_luis_utterance(intentCSV)
 to_luis_entity(entityCSV)
 
-with open('result.json','w', encoding = 'utf-8') as jsonf:
+with open('import_result_luis.json','w', encoding = 'utf-8') as jsonf:
     jsonf.write(json.dumps(dict, indent = 4, ensure_ascii=False))
 

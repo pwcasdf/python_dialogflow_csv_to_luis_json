@@ -11,12 +11,12 @@
 <li>enjoy the luis</li>
 </ol>
 
-## csv format
+## luis_import.py csv format
 
 
 **intent**
 
-|intent|utterances|
+|intent|utterance|
 |:---:|:---:|
 |greeting|how are you?|
 |greeting|what's up?|
@@ -29,5 +29,32 @@
 |device|laptop|synonyms|portable computer|
 
 
+## languageStudio_import.py csv format
+
+
+**intent**
+
+|intent|utterance|entity|
+|:---:|:---:|:---:|
+|greeting|hey you, how are you?|how are you@entity_name|
+|greeting|hey you, what's up?|what's up@entity_name|
+|aks_for_meal|do you want some snacks?|snack@food|
+|...|...|...|
+
+**list entity**
+
+|parent_name|child_name|type|synonyms|||
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|device|cell phone|synonyms|mobile|phone|smart phone|
+|device|laptop|synonyms|portable computer|
+|...|...|...|...|
+
 types: synonyms(list entity)
-(pattern(regex) will be updated soon)
+
+## test csv format
+
+|question|
+|:---:|
+|1st utterance|
+|2nd utterance|
+|...|

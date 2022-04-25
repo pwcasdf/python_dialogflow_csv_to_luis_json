@@ -73,28 +73,4 @@ def to_languageStudio_tagging(csvPath):
             
             i += 1
 
-            #test = row['entity'].split("#")
-            #print(test)
-
-            #print("@@@@@@@@@@@@@@@@@@")
-            #test2 = test[0].split("@")
-            #print(test2)
-
-            #test3 = row['utterance']
-
-            #p = test3.index(test2[0])
-
-            #print(test3)
-            #print(test2[0])
-            #print(len(test2[0]))
-            #print(p)
-
-            # strip to remove spaces at the first char end the last
-            #a = "aa aa "
-            #c = a.strip()
-            #b = " bbbb"
-            #d = b.strip()
-
-            #print(c+d)
-
 to_languageStudio_tagging(intentCSV)
